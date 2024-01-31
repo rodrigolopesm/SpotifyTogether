@@ -1,7 +1,5 @@
 # Store all urls for the api app
 from django.urls import include, path
-from .views import main
+from .views import RoomView
 
-urlpatterns = [
-    path("home", main),
-]
+urlpatterns = [path("home", RoomView.as_view())]
